@@ -7,7 +7,7 @@ class CounterAutoClick extends Component {
     this.state = {
       time: 1000,
       isWork: false,
-      autoClickMount: 30000,
+      autoClickMount: 5000,
       autoClickRemaining: 0,
       hideAutoClick: false,
     };
@@ -18,10 +18,13 @@ class CounterAutoClick extends Component {
     this.runAutoClick();
     this.autoWorkClickRemaining();
     setTimeout(() => {
-      return (
-        clearInterval(this.setIntervalId),
-        this.setState({ hideAutoClick: true })
-      );
+      if (this.state.hideAutoClick === false) {
+        return (
+          clearInterval(this.setIntervalId),
+          this.setState({ hideAutoClick: true }),
+          this.setState({ isWork: false })
+        );
+      }
     }, this.state.autoClickMount);
   }
   autoWorkClickRemaining = () => {
@@ -43,6 +46,7 @@ class CounterAutoClick extends Component {
     if (event !== undefined) {
       if (this.state.hideAutoClick === false) {
         this.setState({hideAutoClick: true})
+        this.setState({ isWork: false })
       }
     }
     if (this.state.isWork === false) {
