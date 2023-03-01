@@ -1,0 +1,59 @@
+.clickArticle{
+    border: 2px solid white;
+    /* padding: 0px 20px; */
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.clickTittle{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.clickButton{
+    color: white;
+    font-size: 20px;
+    padding: 12px 30px;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.clickButton:hover{
+    background-color: rgba(0, 0, 0, 0.308);
+    transition: .3s ease;
+}
+.clickInput{
+    font-size: 16px;
+    width: 60%;
+    outline: none;
+    border: none;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.disabled{
+    opacity: 0;
+}
+.startedDiv{
+    text-align: center;
+    padding: 100px 100px;
+    background-color: #3189fb;
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+    left: 62%;
+}
+.startedSeconds{
+    margin-top: 20px;
+    font-size:18px;
+}
+.startedSecondsDescription{
+    font-size: 14px;
+}
+.hide{
+    display: none;
+  }

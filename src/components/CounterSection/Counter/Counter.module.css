@@ -1,0 +1,75 @@
+.counterArticle{
+    display: flex;
+    flex-direction: column;
+    background-color: #3189fb;
+    padding: 20px 200px;
+    color: white;
+    gap: 60px;
+}
+.counterTittle{
+    text-align: center;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.counterText{
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.counterButton{
+    box-sizing: border-box;
+    font-size: 25px;
+    padding: 10px 20px;
+    height: 60px;
+    width: 150px;
+    cursor: pointer;
+    background-color: white;
+    color: #3189fb;
+    border: none;
+    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+.counterButton:hover{
+    transform: scale(1.02);
+    transition: .2s ease;
+}
+.counterButton:active{
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+.directionButton{
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+    color: #2c4c77;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+.directionButton:hover{
+    transform: scale(1.02);
+    transition: .2s ease;
+}
+.inpunts{
+    display: flex;
+    gap: 10px;
+}
+.counterLabel{
+    cursor: pointer;
+    font-size: 23px;
+}
+.counterLabel:hover{
+    color: blue;
+    transition: .4s ease-out;
+}
